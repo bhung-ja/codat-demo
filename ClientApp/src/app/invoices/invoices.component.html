@@ -1,0 +1,67 @@
+<div class="card m-3">
+  <h5 class="card-header">Company</h5>
+  <div class="card-body">
+    <form name="form" (ngSubmit)="onSubmit(form)" #form="ngForm">
+      <div class="form-row">
+        <div class="form-group col">
+          <label>Invoice Id</label>
+          <input type="text" name="invoiceId" class="form-control" ngModel #invoiceId />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col">
+          <label>Due Date</label>
+          <input type="date" name="dueDate" class="form-control" ngModel #dueDate />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col">
+          <label>Currency</label>
+          <input type="text" name="currency" class="form-control" ngModel #currency />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col">
+          <label>Customer</label>
+          <input type="text" name="customerRefId" class="form-control" ngModel #customerRefId />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col">
+          <label>Status</label>
+          <input type="text" name="status" class="form-control" ngModel #status />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col">
+          <label>Description</label>
+          <input type="text" name="description" class="form-control" ngModel #description />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col">
+          <label>Quantity</label>
+          <input type="number" name="quantity" class="form-control" ngModel #quantity />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col">
+          <label>Unit Amount</label>
+          <input type="number" name="unitAmount" class="form-control" ngModel #unitAmount />
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-primary mr-1">Create</button>
+        <button class="btn btn-secondary" type="reset">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

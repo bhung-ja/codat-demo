@@ -1,0 +1,29 @@
+<div class="card m-3">
+  <h5 class="card-header">Company</h5>
+  <div class="card-body">
+    <form name="form" (ngSubmit)="onSubmit(form)" #form="ngForm">
+      <div class="form-row">
+        <div class="form-group col">
+          <label>Company Name</label>
+          <input type="text" name="name" class="form-control" ngModel #name />
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-primary mr-1">Register</button>
+        <button class="btn btn-secondary" type="reset">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="card m-3">
+  <h5 class="card-header">All Companies</h5>
+  <div class="card-body">
+    <ul>
+      <li *ngFor="let item of companies">
+        {{ item.name }} - <a [href]="item.redirect" target="_blank">Link to QuickBooks</a>
+      </li>
+    </ul>
+  </div>
+</div>
